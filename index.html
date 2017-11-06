@@ -5,8 +5,108 @@
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+  	<header class="main-header">
+  		<nav class="main-navigation">
+  			<a class="main-logo">
+  				<img src="http://placehold.it/160x65" width="160" height="65" alt="Логотип студии «Нёрдс»">
+  			</a>
+  			<ul class="site-navigation">
+  				<li><a href="studio.html">Студия</a></li>
+  				<li><a href="customers.html">Клиенты</a></li>
+  				<li><a href="shop.html">Магазин</a></li>
+  				<li><a href="contacts.html">Контакты</a></li>
+  			</ul>
+  			<ul class="user-navigation">
+  				<li class="basket"><a href="#">Корзина</a></li>
+  			</ul>
+  		</nav>
+  	</header>
+    <main class="container">
+    	<h1 class="visually-hidden">Дизайн-студия «Нёрдс»</h1>
+    	<section class="slider">
+    		<h2 class="visually-hidden">Слайдер</h2>
+    		<!-- slider will be here, 759*411 -->
+    	</section>
+    	<section class="services">
+    		<h2 class="visually-hidden">Услуги</h2>
+    		<ul class="services-list">
+    			<li class="services-item">
+    				<h3>Веб-сайты</h3>
+    				<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+    				<a href="#" class="btn">Заказать</a>
+    			</li>
+    			<li class="services-item">
+    				<h3>Приложения</h3>
+    				<p>Покорите топ-10 приложений в AppStore и Google Play</p>
+    				<a href="#" class="btn">Заказать</a>
+    			</li>
+    			<li class="services-item">
+    				<h3>Презентации</h3>
+    				<p>Вы даже не подозреваете, насколько вы изумительны!</p>
+    				<a href="#" class="btn">Заказать</a>
+    			</li>
+    		</ul>
+    	</section>
+    	<article class="studio-about">
+    		<h2 class="visually-hidden">Кратко о студии</h2>
+			<p class="lead">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+			<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+			<h3>Выполняем заказы на разработку:</h3>
+			<ul class="studio-projects">
+				<li>Веб-сайтов любой сложности</li>
+				<li>Мобильных приложений для iOS и Android</li>
+				<li>Слайдшоу и видео для корпоративных презентаций</li>
+			</ul>
+			<h3>С 2004 года любим точность во всём:</h3>
+			<table class="advantages">
+				<tr>
+					<td><span class="advantage-value">146</span><span class="advantage-percent">%</span></td>
+					<td>Уровень самоотдачи</td>
+				</tr>
+				<tr>
+					<td><span class="advantage-value">100</span><span class="advantage-percent">%</span></td>
+					<td>Соблюдение сроков</td>
+				</tr>
+				<tr>
+					<td><span class="advantage-value">50</span><span class="advantage-percent">%</span></td>
+					<td>Минимальная предоплата</td>
+				</tr>
+			</table>
+		</article>
+		<section class="cases">
+			<h2 class="visually-hidden">Примеры наших проектов</h2>
+			<ul class="cases-list">
+				<li class="case-item"><a href="#">Html Academy</a></li>
+				<li class="case-item"><a href="#">Barbershop Borodinski</a></li>
+				<li class="case-item"><a href="#">Pink</a></li>
+				<li class="case-item"><a href="#">Mishka</a></li>
+			</ul>
+    	</section>
+    	<section class="contacts">
+    		<h2 class="visually-hidden">Наши контакты</h2>
+    		<h3>Nёrds design studio</h3>
+    		<p>191186, Санкт-Петербург,<br>
+    		ул. Б. Конюшенная, д. 19/8</p>
+    		<p>тел. +7 (812) 275-75-75</p>
+    		<a href="#" class="btn">Напишите нам</a>
+    		<div>
+    			<img src="http://placehold.it/1440x416" width="1440" height="416" alt="Карта">
+    		</div>
+    	</section>
+    </main>
+    <footer class="main-footer">
+    	<ul>
+    		<li><a href="#" class="socials">Вконтакте</a></li>
+    		<li><a href="#" class="socials">Facebook</a></li>
+    		<li><a href="#" class="socials">Instagram</a></li>
+    	</ul>
+    	<b>Давайте дружить, это выгодно!</b>
+    	<p>Скидка 10% для друзей из социальных сетей.</p>
+    </footer>
+    <section class="modal-feedback">
+    	<h2>Напишите нам</h2>
+    	<!-- form will be here -->
+    	<span class="modal-close">x</span>
+    </section>
   </body>
 </html>
