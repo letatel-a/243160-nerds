@@ -7,7 +7,7 @@
 	<body>
 		<header>
 			<nav class="main-navigation">
-  				<a class="main-logo">
+  				<a class="main-logo" href="index.html">
   					<img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии «Нёрдс»">
   				</a>
   				<ul class="site-navigation">
@@ -133,9 +133,23 @@
     		<p>Скидка 10% для друзей из социальных сетей.</p>
 		</footer>
 		<section class="modal-feedback">
-    	<h2>Напишите нам</h2>
-    	<!-- form will be here -->
-    	<span class="modal-close">x</span>
-    </section>
+    		<h2>Напишите нам</h2>
+    		<form>
+    			<label>
+    				Ваше имя:<br>
+    				<input type="text" name="username" placeholder="Представьтесь, пожалуйста">
+    			</label><br>
+    			<label>
+    				Ваш e-mail:<br>
+    				<input type="text" name="usermail" placeholder="Для отправки ответа">
+    			</label><br>
+    			<label>
+    				Текст письма:<br>
+    				<textarea>В свободной форме</textarea>
+    			</label><br>
+    			<button class="btn" type="submit">Отправить</button><br>
+    			<button class="modal-close" type="button">X</button>
+    		</form>
+    	</section>
 	</body>
 </html>

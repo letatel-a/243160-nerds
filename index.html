@@ -105,8 +105,22 @@
     </footer>
     <section class="modal-feedback">
     	<h2>Напишите нам</h2>
-    	<!-- form will be here -->
-    	<span class="modal-close">x</span>
+    	<form>
+    		<label>
+    			Ваше имя:<br>
+    			<input type="text" name="username" placeholder="Представьтесь, пожалуйста">
+    		</label><br>
+    		<label>
+    			Ваш e-mail:<br>
+    			<input type="text" name="usermail" placeholder="Для отправки ответа">
+    		</label><br>
+    		<label>
+    			Текст письма:<br>
+    			<textarea>В свободной форме</textarea>
+    		</label><br>
+    		<button class="btn" type="submit">Отправить</button><br>
+    		<button class="modal-close" type="button">X</button>
+    	</form>
     </section>
   </body>
 </html>
