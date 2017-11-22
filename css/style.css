@@ -1,0 +1,347 @@
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: Roboto, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #283136;
+
+	background-color: #ffffff;
+}
+
+a {
+	text-decoration: none;
+}
+
+.main-logo:hover,
+.main-logo:focus {
+	opacity: 0.8;
+}
+
+.main-logo:active {
+	opacity: 0.3;
+}
+
+.main-navigation {
+	line-height: 30px;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.site-navigation,
+.user-navigation {
+	list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+	color: #000000;
+}
+
+.site-navigation a:hover,
+.user-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:focus {
+	color: #fb565a;
+}
+
+.site-navigation a:active,
+.user-navigation a:active {
+	opacity: 0.3; 
+}
+
+.slide b {
+	font-size: 55px;
+	line-height: 55px;
+	font-weight: 500;
+	color: #000000;
+}
+
+.slider-controls {
+	list-style: none;
+}
+
+.slider-controls button {
+	border: none;
+	cursor: pointer;
+}
+
+.btn {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: #ffffff;
+
+	background-color: #fb565a;
+	border-radius: 2px;
+}
+
+.btn:hover {
+	background-color: #e74246;
+}
+
+.btn:active {
+	color: rgba(255,255,255,0.3);
+
+	background-color: #d7373b;
+}
+
+.services-item:nth-child(2) .btn {
+	background-color: #00ca74;
+}
+
+.services-item:nth-child(2) .btn:hover {
+	background-color: #00bc6c;
+}
+
+.services-item:nth-child(2) .btn:active {
+	background-color: #00aa62;
+}
+
+.services-item:nth-child(3) .btn {
+	background-color: #efc84a;
+}
+
+.services-item:nth-child(3) .btn:hover {
+	background-color: #eab534;
+}
+
+.services-item:nth-child(3) .btn:active {
+	background-color: #e5a722;
+}
+
+.services-item h3 {
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.lead {
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: 500;
+	color: #000000;
+}
+
+.studio-about h3 {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.studio-projects {
+	list-style: none;
+}
+
+.advantages tr:first-child {
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.advantage-percent {
+	font-size: 22px;
+
+}
+
+.advantages tr:last-child {
+	line-height: 18px;
+}
+
+.cases-list {
+	list-style: none;
+}
+
+.cases a {
+	opacity: 0.2;
+}
+
+.cases a:hover,
+.cases a:focus {
+	opacity: 1;
+}
+
+.cases a:active {
+	opacity: 0.1;
+}
+
+.contacts h3 {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.contacts p {
+	line-height: 18px;
+	color: #666666;
+}
+
+.socials {
+	list-style: none;
+}
+
+.socials a {
+	color: #283136;
+}
+
+.main-footer b {
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.main-footer p {
+	line-height: 22px;
+	color: #444444;
+}
+
+.modal-feedback h2 {
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: 500;
+	color: #000000;
+}
+
+.modal-feedback label {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.modal-feedback input,
+.modal-feedback textarea {
+	border: 2px solid #d7dcde;
+}
+
+.modal-feedback input:hover,
+.modal-feedback textarea:hover {
+	border: 2px solid #b4b9bb;
+}
+
+.modal-feedback input:focus,
+.modal-feedback textarea:focus {
+	border: 2px solid #000000;
+	outline: none;
+}
+
+.modal-feedback input:invalid {
+	border: 2px solid #e74246;
+}
+
+.modal-feedback button {
+	border: none;
+}
+
+/* магазин */
+
+.shop-title {
+	font-size: 55px;
+	line-height: 55px;
+	font-weight: 500;
+	color: #000000;
+}
+
+.filters fieldset {
+	border: none;
+}
+
+.filters legend {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.filters label {
+	font: inherit;
+	line-height: 20px;
+}
+
+.filters .price {
+	line-height: 22px;
+	text-transform: uppercase;
+}
+
+.filter-nav {
+	color: #000000;
+
+	background-color: #eeeeee;
+	border: none;
+	border-radius: 2px;
+}
+
+.filter-nav:hover {
+	background-color: #dfdfdf;
+}
+
+.filter-nav:active {
+	color: rgba(0,0,0,0.3);
+	background-color: #d5d5d5;
+}
+
+.catalog-sort h3 {
+	font-size: 18px;
+	line-height: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.sort-type {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.sort-type a {
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+	color: rgba(0,0,0,0.3);
+}
+
+.sort-type a:hover {
+	color: rgba(0,0,0,0.6);
+}
+
+.sort-type a:active,
+.sort-type .sort-type-current {
+	color: #000000;
+}
+
+.catalog-item-hover h4 {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.catalog-item-hover p {
+	line-height: 18px;
+	color: #666666;
+}
+
+.catalog-pagination {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.catalog-pagination-active {
+	background-color: #ffffff;
+	border: 3px solid #eeeeee;
+}

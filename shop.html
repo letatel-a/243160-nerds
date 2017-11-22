@@ -3,6 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Нёрдс - магазин</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
 		<header>
@@ -22,20 +25,61 @@
   			</nav>
 		</header>
 		<main class="container">
-			<h1>Магазин готовых шаблонов</h1>
+			<h1 class="shop-title">Магазин готовых шаблонов</h1>
 			<section class="filters">
 				<h2 class="visually-hidden">Фильтры шаблонов</h2>
-				<!-- form will be here -->
+				<form>
+					<fieldset>
+						<legend>Стоимость:</legend>
+						<label class="price">От
+							<input type="number" name="price-min" min="0">
+						</label>
+						<label class="price">До
+							<input type="number" name="price-max" max="15000">
+						</label>
+					</fieldset>
+					<fieldset>
+						<legend>Сетка:</legend>
+						<label>
+							<input type="radio" name="grid" value="adaptive" checked>Адаптивная<br>
+						</label>
+						<label>
+							<input type="radio" name="grid" value="fixed">Фиксированная<br>
+						</label>
+						<label>
+							<input type="radio" name="grid" value="liquid">Резиновая
+						</label>
+					</fieldset>
+					<fieldset>
+						<legend>Особенности:</legend>
+						<label>
+							<input type="checkbox" name="features" value="slider" checked>Слайдер<br>
+						</label>
+						<label>
+							<input type="checkbox" name="features" value="advantages">Блок преимуществ<br>
+						</label>
+						<label>
+							<input type="checkbox" name="features" value="news" checked>Новости<br>
+						</label>
+						<label>
+							<input type="checkbox" name="features" value="gallery">Галерея<br>
+						</label>
+						<label>
+							<input type="checkbox" name="features" value="basket">Корзина
+						</label>
+					</fieldset>
+					<button class="btn filter-nav" type="submit">Показать</button>
+				</form>
 			</section>
 			<section class="catalog">
 				<h2 class="visually-hidden">Каталог шаблонов</h2>
 				<div class="catalog-sort">
 					<h3>Сортировка:</h3>
 					<ul class="sort-type">
-						<li class="sort-type-active"><a href="#">По цене</a></li>
+						<li><a class="sort-type-current" href="#">По цене</a></li>
 						<li><a href="#">По типу</a></li>
 						<li><a href="#">По названию</a></li>
-						<li class="sort-type-active"><a href="#">По убыванию</a></li>
+						<li><a class="sort-type-current" href="#">По убыванию</a></li>
 						<li><a href="#">По возрастанию</a></li>
 					</ul>
 				</div>
@@ -105,10 +149,10 @@
 					</ul>
 				</section>
 				<ul class="catalog-pagination">
-					<li class="catalog-pagination-active"><a href="#">1</a></li>
-					<li><a href="#">2</a></li>
-					<li><a href="#">3</a></li>
-					<li><a href="#">Следующая</a></li>
+					<li><a class="filter-nav catalog-pagination-active" href="#">1</a></li>
+					<li><a class="filter-nav" href="#">2</a></li>
+					<li><a class="filter-nav" href="#">3</a></li>
+					<li><a class="filter-nav" href="#">Следующая</a></li>
 				</ul>
 			</section>
 			<section class="contacts">
@@ -123,15 +167,15 @@
     			</div>
     		</section>
 		</main>
-		<footer>
-			<ul>
-    			<li><a href="#" class="socials">Вконтакте</a></li>
-    			<li><a href="#" class="socials">Facebook</a></li>
-    			<li><a href="#" class="socials">Instagram</a></li>
+		<footer class="main-footer">
+    		<ul class="socials">
+    			<li><a href="#">Вконтакте</a></li>
+    			<li><a href="#">Facebook</a></li>
+    			<li><a href="#">Instagram</a></li>
     		</ul>
     		<b>Давайте дружить, это выгодно!</b>
     		<p>Скидка 10% для друзей из социальных сетей.</p>
-		</footer>
+    	</footer>
 		<section class="modal-feedback">
     		<h2>Напишите нам</h2>
     		<form>

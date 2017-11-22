@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
   	<header class="main-header">
@@ -25,7 +28,24 @@
     	<h1 class="visually-hidden">Дизайн-студия «Нёрдс»</h1>
     	<section class="slider">
     		<h2 class="visually-hidden">Слайдер</h2>
-    		<!-- slider will be here, 759*411 -->
+    		<div class="slide">
+    			<b>Долго, дорого, скрупулезно</b>
+    			<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+    		</div>
+    		<div class="slide">
+    			<b>Любим математику как никто другой</b>
+    			<p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+    		</div>
+    		<div class="slide">
+    			<b>Только ночь, только хардкор</b>
+    			<p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+    		</div>
+    		<a class="btn" href="#">Узнать больше</a>
+    		<ul class="slider-controls">
+    			<li><button type="button">Слайд 1</button></li>
+    			<li><button type="button">Слайд 2</button></li>
+    			<li><button type="button">Слайд 3</button></li>
+    		</ul>
     	</section>
     	<section class="services">
     		<h2 class="visually-hidden">Услуги</h2>
@@ -60,15 +80,13 @@
 			<h3>С 2004 года любим точность во всём:</h3>
 			<table class="advantages">
 				<tr>
-					<td><span class="advantage-value">146</span><span class="advantage-percent">%</span></td>
+					<td>146<span class="advantage-percent">%</span></td>
+					<td>100<span class="advantage-percent">%</span></td>
+					<td>50<span class="advantage-percent">%</span></td>
+				</tr>
+				<tr>
 					<td>Уровень самоотдачи</td>
-				</tr>
-				<tr>
-					<td><span class="advantage-value">100</span><span class="advantage-percent">%</span></td>
 					<td>Соблюдение сроков</td>
-				</tr>
-				<tr>
-					<td><span class="advantage-value">50</span><span class="advantage-percent">%</span></td>
 					<td>Минимальная предоплата</td>
 				</tr>
 			</table>
@@ -76,10 +94,18 @@
 		<section class="cases">
 			<h2 class="visually-hidden">Примеры наших проектов</h2>
 			<ul class="cases-list">
-				<li class="case-item"><a href="#">Html Academy</a></li>
-				<li class="case-item"><a href="#">Barbershop Borodinski</a></li>
-				<li class="case-item"><a href="#">Pink</a></li>
-				<li class="case-item"><a href="#">Mishka</a></li>
+				<li class="case-item">
+					<a href="#"><img src="img/logo-1.png" width="199" height="68" alt="Html Academy"></a>
+				</li>
+				<li class="case-item">
+					<a href="#"><img src="img/logo-2.png" width="209" height="90" alt="Barbershop Borodinski"></a>
+				</li>
+				<li class="case-item">
+					<a href="#"><img src="img/logo-3.png" width="185" height="52" alt="Pink"></a>
+				</li>
+				<li class="case-item">
+					<a href="#"><img src="img/logo-4.png" width="173" height="84" alt="Mishka"></a>
+				</li>
 			</ul>
     	</section>
     	<section class="contacts">
@@ -95,10 +121,10 @@
     	</section>
     </main>
     <footer class="main-footer">
-    	<ul>
-    		<li><a href="#" class="socials">Вконтакте</a></li>
-    		<li><a href="#" class="socials">Facebook</a></li>
-    		<li><a href="#" class="socials">Instagram</a></li>
+    	<ul class="socials">
+    		<li><a href="#">Вконтакте</a></li>
+    		<li><a href="#">Facebook</a></li>
+    		<li><a href="#">Instagram</a></li>
     	</ul>
     	<b>Давайте дружить, это выгодно!</b>
     	<p>Скидка 10% для друзей из социальных сетей.</p>
