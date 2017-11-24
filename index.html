@@ -24,23 +24,25 @@
   			</ul>
   		</nav>
   	</header>
-    <main class="container">
+    <main>
     	<h1 class="visually-hidden">Дизайн-студия «Нёрдс»</h1>
     	<section class="slider">
     		<h2 class="visually-hidden">Слайдер</h2>
     		<div class="slide">
-    			<b>Долго, дорого, скрупулезно</b>
-    			<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+    			<b>Долго, дорого,<br>скрупулезно.</b>
+    			<p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
+    			<a class="btn" href="#">Узнать больше</a>
     		</div>
-    		<div class="slide">
+    		<div class="slide visually-hidden">
     			<b>Любим математику как никто другой</b>
     			<p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+    			<a class="btn" href="#">Узнать больше</a>
     		</div>
-    		<div class="slide">
+    		<div class="slide visually-hidden">
     			<b>Только ночь, только хардкор</b>
     			<p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+    			<a class="btn" href="#">Узнать больше</a>
     		</div>
-    		<a class="btn" href="#">Узнать больше</a>
     		<ul class="slider-controls">
     			<li><button type="button">Слайд 1</button></li>
     			<li><button type="button">Слайд 2</button></li>
@@ -69,27 +71,31 @@
     	</section>
     	<article class="studio-about">
     		<h2 class="visually-hidden">Кратко о студии</h2>
-			<p class="lead">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
-			<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-			<h3>Выполняем заказы на разработку:</h3>
-			<ul class="studio-projects">
-				<li>Веб-сайтов любой сложности</li>
-				<li>Мобильных приложений для iOS и Android</li>
-				<li>Слайдшоу и видео для корпоративных презентаций</li>
-			</ul>
-			<h3>С 2004 года любим точность во всём:</h3>
-			<table class="advantages">
-				<tr>
-					<td>146<span class="advantage-percent">%</span></td>
-					<td>100<span class="advantage-percent">%</span></td>
-					<td>50<span class="advantage-percent">%</span></td>
-				</tr>
-				<tr>
-					<td>Уровень самоотдачи</td>
-					<td>Соблюдение сроков</td>
-					<td>Минимальная предоплата</td>
-				</tr>
-			</table>
+    		<div class="studio-wrapper">
+				<p class="lead">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+				<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+				<h3>Выполняем заказы на разработку:</h3>
+				<ul class="studio-projects">
+					<li>Веб-сайтов любой сложности</li>
+					<li>Мобильных приложений для iOS и Android</li>
+					<li>Слайдшоу и видео для корпоративных презентаций</li>
+				</ul>
+			</div>
+			<div class="studio-wrapper">
+				<h3>С 2004 года любим точность во всём:</h3>
+				<table class="advantages">
+					<tr>
+						<td>146<span class="advantage-percent">%</span></td>
+						<td>100<span class="advantage-percent">%</span></td>
+						<td>50<span class="advantage-percent">%</span></td>
+					</tr>
+					<tr>
+						<td>Уровень самоотдачи</td>
+						<td>Соблюдение сроков</td>
+						<td>Минимальная предоплата</td>
+					</tr>
+				</table>
+			</div>
 		</article>
 		<section class="cases">
 			<h2 class="visually-hidden">Примеры наших проектов</h2>
@@ -110,11 +116,13 @@
     	</section>
     	<section class="contacts">
     		<h2 class="visually-hidden">Наши контакты</h2>
-    		<h3>Nёrds design studio</h3>
-    		<p>191186, Санкт-Петербург,<br>
-    		ул. Б. Конюшенная, д. 19/8</p>
-    		<p>тел. +7 (812) 275-75-75</p>
-    		<a href="#" class="btn">Напишите нам</a>
+    		<div class="contacts-wrapper">
+	    		<h3>Nёrds design studio</h3>
+	    		<p>191186, Санкт-Петербург,<br>
+	    		ул. Б. Конюшенная, д. 19/8</p>
+	    		<p>тел. +7 (812) 275-75-75</p>
+	    		<a href="#" class="btn">Напишите нам</a>
+    		</div>
     		<div>
     			<img src="img/map.png" width="1440" height="416" alt="Карта">
     		</div>
@@ -122,12 +130,14 @@
     </main>
     <footer class="main-footer">
     	<ul class="socials">
-    		<li><a href="#">Вконтакте</a></li>
-    		<li><a href="#">Facebook</a></li>
-    		<li><a href="#">Instagram</a></li>
+    		<li><a class="socials-vk" href="#">Вконтакте</a></li>
+    		<li><a class="socials-fb" href="#">Facebook</a></li>
+    		<li><a class="socials-insta" href="#">Instagram</a></li>
     	</ul>
-    	<b>Давайте дружить, это выгодно!</b>
-    	<p>Скидка 10% для друзей из социальных сетей.</p>
+    	<div>
+	    	<b>Давайте дружить, это выгодно!</b>
+	    	<p>Скидка 10% для друзей из социальных сетей.</p>
+    	</div>
     </footer>
     <section class="modal-feedback">
     	<h2>Напишите нам</h2>
