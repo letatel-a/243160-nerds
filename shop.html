@@ -10,19 +10,19 @@
 	<body>
 		<header class="main-header">
 			<nav class="main-navigation">
-  				<a class="main-logo" href="index.html">
-  					<img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии «Нёрдс»">
-  				</a>
-  				<ul class="site-navigation">
-  					<li><a href="studio.html">Студия</a></li>
-  					<li><a href="customers.html">Клиенты</a></li>
-  					<li class="site-navigation-active"><a href="shop.html">Магазин</a></li>
-  					<li><a href="contacts.html">Контакты</a></li>
-  				</ul>
-  				<ul class="user-navigation">
-  					<li class="basket"><a href="#">Корзина</a></li>
-  				</ul>
-  			</nav>
+				<a class="main-logo" href="index.html">
+					<img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии «Нёрдс»">
+				</a>
+				<ul class="site-navigation">
+					<li><a href="studio.html">Студия</a></li>
+					<li><a href="customers.html">Клиенты</a></li>
+					<li class="site-navigation-current"><a href="shop.html">Магазин</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
+				</ul>
+				<ul class="user-navigation">
+					<li class="basket"><a href="#">Корзина</a></li>
+				</ul>
+			</nav>
 		</header>
 		<main>
 			<h1 class="shop-title">Магазин готовых шаблонов</h1>
@@ -32,41 +32,56 @@
 					<form>
 						<fieldset>
 							<legend>Стоимость:</legend>
+							<div class="price-controls">
+								<div class="price-scale">
+									<div class="price-value"></div>
+								</div>
+								<div class="price-toggle toggle-min"></div>
+								<div class="price-toggle toggle-max"></div>
+							</div>
 							<label class="price">От
-								<input type="number" name="price-min" placeholder="0">
+								<input type="text" name="price-min" placeholder="0">
 							</label>
 							<label class="price">До
-								<input type="number" name="price-max" placeholder="15000">
+								<input type="text" name="price-max" placeholder="15000">
 							</label>
 						</fieldset>
 						<fieldset>
 							<legend>Сетка:</legend>
-							<label>
-								<input type="radio" name="grid" value="adaptive" checked>Адаптивная<br>
+							<label class="radio-checkbox">
+								<input type="radio" name="grid" value="adaptive" checked>Адаптивная
+								<span class="radio-indicator"></span>
 							</label>
-							<label>
-								<input type="radio" name="grid" value="fixed">Фиксированная<br>
+							<label class="radio-checkbox">
+								<input type="radio" name="grid" value="fixed">Фиксированная
+								<span class="radio-indicator"></span>
 							</label>
-							<label>
-								<input type="radio" name="grid" value="liquid">Резиновая
+							<label class="radio-checkbox">
+								<input type="radio" name="grid" value="liquid" disabled>Резиновая
+								<span class="radio-indicator"></span>
 							</label>
 						</fieldset>
 						<fieldset>
 							<legend>Особенности:</legend>
-							<label>
-								<input type="checkbox" name="features" value="slider" checked>Слайдер<br>
+							<label class="radio-checkbox">
+								<input type="checkbox" name="features" value="slider" checked>Слайдер
+								<span class="checkbox-indicator"></span>
 							</label>
-							<label>
-								<input type="checkbox" name="features" value="advantages">Блок преимуществ<br>
+							<label class="radio-checkbox">
+								<input type="checkbox" name="features" value="advantages">Блок преимуществ
+								<span class="checkbox-indicator"></span>
 							</label>
-							<label>
-								<input type="checkbox" name="features" value="news" checked>Новости<br>
+							<label class="radio-checkbox">
+								<input type="checkbox" name="features" value="news" checked>Новости
+								<span class="checkbox-indicator"></span>
 							</label>
-							<label>
-								<input type="checkbox" name="features" value="gallery">Галерея<br>
+							<label class="radio-checkbox">
+								<input type="checkbox" name="features" value="gallery">Галерея
+								<span class="checkbox-indicator"></span>
 							</label>
-							<label>
+							<label class="radio-checkbox">
 								<input type="checkbox" name="features" value="basket">Корзина
+								<span class="checkbox-indicator"></span>
 							</label>
 						</fieldset>
 						<button class="btn filter-nav" type="submit">Показать</button>
@@ -92,7 +107,7 @@
 									<img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
 								</a>
 								<div class="catalog-item-hover">
-									<h4>Седона</h4>
+									<h4>Sedona</h4>
 									<p>Информационный сайт<br>для туристов</p>
 									<a href="#" class="btn">9 900 руб.</a>
 								</div>
@@ -158,48 +173,48 @@
 				</section>
 			</div>
 			<section class="contacts">
-	    		<h2 class="visually-hidden">Наши контакты</h2>
-	    		<div class="contacts-wrapper">
-		    		<h3>Nёrds design studio</h3>
-		    		<p>191186, Санкт-Петербург,<br>
-		    		ул. Б. Конюшенная, д. 19/8</p>
-		    		<p>тел. +7 (812) 275-75-75</p>
-		    		<a href="#" class="btn">Напишите нам</a>
-	    		</div>
-	    		<div>
-	    			<img src="img/map.png" width="1440" height="416" alt="Карта">
-	    		</div>
-    		</section>
+				<h2 class="visually-hidden">Наши контакты</h2>
+				<div class="contacts-wrapper">
+					<h3>Nёrds design studio</h3>
+					<p>191186, Санкт-Петербург,<br>
+					ул. Б. Конюшенная, д. 19/8</p>
+					<p>тел. +7 (812) 275-75-75</p>
+					<a href="#" class="btn">Напишите нам</a>
+				</div>
+				<div class="map-wrapper">
+					<img src="img/map.png" width="1440" height="416" alt="Карта">
+				</div>
+			</section>
 		</main>
 		<footer class="main-footer">
-    		<ul class="socials">
-    			<li><a class="socials-vk" href="#">Вконтакте</a></li>
-    			<li><a class="socials-fb" href="#">Facebook</a></li>
-    			<li><a class="socials-insta" href="#">Instagram</a></li>
-    		</ul>
-    		<div>
-		    	<b>Давайте дружить, это выгодно!</b>
-		    	<p>Скидка 10% для друзей из социальных сетей.</p>
-    		</div>
-    	</footer>
+			<ul class="socials">
+				<li><a class="socials-vk" href="#">Вконтакте</a></li>
+				<li><a class="socials-fb" href="#">Facebook</a></li>
+				<li><a class="socials-insta" href="#">Instagram</a></li>
+			</ul>
+			<div>
+				<b>Давайте дружить, это выгодно!</b>
+				<p>Скидка 10% для друзей из социальных сетей.</p>
+			</div>
+		</footer>
 		<section class="modal-feedback">
-    		<h2>Напишите нам</h2>
-    		<form>
-    			<label>
-    				Ваше имя:<br>
-    				<input type="text" name="username" placeholder="Представьтесь, пожалуйста">
-    			</label><br>
-    			<label>
-    				Ваш e-mail:<br>
-    				<input type="text" name="usermail" placeholder="Для отправки ответа">
-    			</label><br>
-    			<label>
-    				Текст письма:<br>
-    				<textarea>В свободной форме</textarea>
-    			</label><br>
-    			<button class="btn" type="submit">Отправить</button><br>
-    			<button class="modal-close" type="button">X</button>
-    		</form>
-    	</section>
+			<h2>Напишите нам</h2>
+			<form>
+				<label>
+					Ваше имя:<br>
+					<input type="text" name="username" placeholder="Представьтесь, пожалуйста">
+				</label><br>
+				<label>
+					Ваш e-mail:<br>
+					<input type="text" name="usermail" placeholder="Для отправки ответа">
+				</label><br>
+				<label>
+					Текст письма:<br>
+					<textarea>В свободной форме</textarea>
+				</label><br>
+				<button class="btn" type="submit">Отправить</button><br>
+				<button class="modal-close" type="button">X</button>
+			</form>
+		</section>
 	</body>
 </html>
