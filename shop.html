@@ -20,7 +20,7 @@
 					<li><a href="contacts.html">Контакты</a></li>
 				</ul>
 				<ul class="user-navigation">
-					<li class="basket"><a href="#">Корзина</a></li>
+					<li><a href="#">Корзина</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -90,7 +90,7 @@
 				<section class="catalog">
 					<h2 class="visually-hidden">Каталог шаблонов</h2>
 					<div class="catalog-sort">
-						<h3>Сортировка:</h3>
+						<h3>Сортировать:</h3>
 						<ul class="sort-type">
 							<li><a class="sort-type-current" href="#">По цене</a></li>
 							<li><a href="#">По типу</a></li>
@@ -103,61 +103,61 @@
 						<h3 class="visually-hidden">Шаблоны</h3>
 						<ul class="catalog-list">
 							<li class="catalog-item">
-								<a href="#">
+								<div tabindex="0">
 									<img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
-								</a>
+								</div>
 								<div class="catalog-item-hover">
-									<h4>Sedona</h4>
+									<a class="item-header" href="#">Sedona</a>
 									<p>Информационный сайт<br>для туристов</p>
 									<a href="#" class="btn">9 900 руб.</a>
 								</div>
 							</li>
 							<li class="catalog-item">
-								<a href="#">
+								<div tabindex="0">
 									<img src="img/img-pink.jpg" width="360" height="576" alt="Pink">
-								</a>
+								</div>
 								<div class="catalog-item-hover">
-									<h4>Pink App</h4>
+									<a class="item-header" href="#">Pink App</a>
 									<p>Продуктовый лендинг<br>приложения для iOS и Android</p>
 									<a href="#" class="btn">9 900 руб.</a>
 								</div>
 							</li>
 							<li class="catalog-item">
-								<a href="#">
+								<div tabindex="0">
 									<img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop">
-								</a>
+								</div>
 								<div class="catalog-item-hover">
-									<h4>Barbershop</h4>
+									<a class="item-header" href="#">Barbershop</a>
 									<p>Сайт салона красоты.<br>Для мужчин, да.</p>
 									<a href="#" class="btn">9 900 руб.</a>
 								</div>
 							</li>
 							<li class="catalog-item">
-								<a href="#">
+								<div tabindex="0">
 									<img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka">
-								</a>
+								</div>
 								<div class="catalog-item-hover">
-									<h4>Mishka</h4>
+									<a class="item-header" href="#">Mishka</a>
 									<p>Интернет-магазин<br>вязаных игрушек</p>
 									<a href="#" class="btn">9 900 руб.</a>
 								</div>
 							</li>
 							<li class="catalog-item">
-								<a href="#">
+								<div tabindex="0">
 									<img src="img/img-aplus.jpg" width="360" height="576" alt="A plus">
-								</a>
+								</div>
 								<div class="catalog-item-hover">
-									<h4>A plus</h4>
+									<a class="item-header" href="#">A plus</a>
 									<p>Лендинг курсов повышения<br>квалификации</p>
 									<a href="#" class="btn">9 900 руб.</a>
 								</div>
 							</li>
 							<li class="catalog-item">
-								<a href="#">
+								<div tabindex="0">
 									<img src="img/img-kvast.jpg" width="360" height="576" alt="Кваст">
-								</a>
+								</div>
 								<div class="catalog-item-hover">
-									<h4>Кваст</h4>
+									<a class="item-header" href="#">Кваст</a>
 									<p>Промо-сайт производителя<br>крафтового кваса</p>
 									<a href="#" class="btn">9 900 руб.</a>
 								</div>
@@ -179,7 +179,7 @@
 					<p>191186, Санкт-Петербург,<br>
 					ул. Б. Конюшенная, д. 19/8</p>
 					<p>тел. +7 (812) 275-75-75</p>
-					<a href="#" class="btn">Напишите нам</a>
+					<a href="feedback.html" class="btn">Напишите нам</a>
 				</div>
 				<div class="map-wrapper">
 					<img src="img/map.png" width="1440" height="416" alt="Карта">
@@ -192,7 +192,7 @@
 				<li><a class="socials-fb" href="#">Facebook</a></li>
 				<li><a class="socials-insta" href="#">Instagram</a></li>
 			</ul>
-			<div>
+			<div class="main-footer-wrapper">
 				<b>Давайте дружить, это выгодно!</b>
 				<p>Скидка 10% для друзей из социальных сетей.</p>
 			</div>
@@ -200,20 +200,22 @@
 		<section class="modal-feedback">
 			<h2>Напишите нам</h2>
 			<form>
+				<div class="modal-wrapper">
+					<label>
+						Ваше имя:
+						<input type="text" name="username" placeholder="Представьтесь, пожалуйста">
+					</label>
+					<label>
+						Ваш e-mail:
+						<input type="text" name="usermail" placeholder="Для отправки ответа">
+					</label>
+				</div>
 				<label>
-					Ваше имя:<br>
-					<input type="text" name="username" placeholder="Представьтесь, пожалуйста">
-				</label><br>
-				<label>
-					Ваш e-mail:<br>
-					<input type="text" name="usermail" placeholder="Для отправки ответа">
-				</label><br>
-				<label>
-					Текст письма:<br>
+					Текст письма:
 					<textarea>В свободной форме</textarea>
-				</label><br>
-				<button class="btn" type="submit">Отправить</button><br>
-				<button class="modal-close" type="button">X</button>
+				</label>
+				<button class="btn" type="submit">Отправить</button>
+				<button class="modal-close" type="button">Закрыть</button>
 			</form>
 		</section>
 	</body>
